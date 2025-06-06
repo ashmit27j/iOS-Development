@@ -79,7 +79,7 @@ This project is open for learning and contribution. Use the code, give credit, a
 
 ## 📬 Connect with Me
 
-- 💼 [Portfolio](https://ashmit27j.wixstudio.com/my-blogs)
+- 💼 [Portfolio] (under construction 🚧)
 - 💬 [Stack Overflow](https://stackoverflow.com/users/22767913/ashmit)
 - 📩 ashmit27j@gmail.com
 
