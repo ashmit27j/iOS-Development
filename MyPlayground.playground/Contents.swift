@@ -106,16 +106,56 @@
 //
 //Dictornaries in swift use key value pairs where we can access each value using its unique key that has been declared previously
 //(key, value)
-var dictionaryName = ["key1":"value1","key2":"value2","key3":"value3",]
-for (keyName, valueName) in dictionaryName{
-    print("for the key: \(keyName) we have a value assigned as: \(valueName)")
-}
+//var dictionaryName = ["key1":"value1","key2":"value2","key3":"value3",]
+//for (keyName, valueName) in dictionaryName{
+//    print("for the key: \(keyName) we have a value assigned as: \(valueName)")
+//}
 
 //when creating any kind of variable, constant, array, dictionary in swift it will auto detect the datatype for the same, but it is generally good practice to ensure that we have added our own explict data type
 
-var variableCreated: Int = 10
-let constantCreated: Int = 20
-let arraySize: Int = 5
-var arrayCreated = [Int](repeating: 0, count: arraySize)
-var dictionaryCreated: [Int: String] = [1:"Value1", 2:"Value2"]
+//var variableCreated: Int = 10
+//let constantCreated: Int = 20
+//let arraySize: Int = 5
+//var arrayCreated = [Int](repeating: 0, count: arraySize)
+//var dictionaryCreated: [Int: String] = [1:"Value1", 2:"Value2"]
+
+// let userName: String? = nil
+// //this defines that the userName is either a String or it is nil
+// let displayName = userName ?? "Guest"
+// //if userName is nil then it will Guest if not nil then it will take the value in userName
+// print(displayName)
+
+
+//Closue is a block of code that can be passed around and executed whenever needed
+
+// let closureCreated = {
+//     print("You have called the closure, similar to a function")
+// }
+
+// closureCreated()
+
+// functions
+// func function(name: String){
+//     print("Welcome \(name)")
+// }
+// function(name: "Somebody")
+
+// func checkAge(age: Int){
+//     guard age >= 18 else {
+//         print("you are underage")
+//         return
+//     }
+//     print("you are of age")
+// }
+
+// checkAge(age: 9)
+// checkAge(age: 90)
+
+func userLoggedIn(name: String?){
+    //check for nil coalescnce
+    let loggedOnUser = name ?? "guest"
+    print("You are now logged in as \(loggedOnUser)")
+}
+userLoggedIn(name: "Somebody")
+userLoggedIn(name: nil)
 
